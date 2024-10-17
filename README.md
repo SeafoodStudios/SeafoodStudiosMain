@@ -1,4 +1,4 @@
 SeafoodStudios' Links
-https://lightswitch.seafoodstudios.com/
-https://cloudroom.seafoodstudios.com/
-https://prankinator.seafoodstudios.com/
+Light Switch Simulator: https://lightswitch.seafoodstudios.com/
+Cloudroom: https://cloudroom.seafoodstudios.com/
+Prankinator: https://prankinator.seafoodstudios.com/
