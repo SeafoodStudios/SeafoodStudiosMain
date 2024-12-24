@@ -6,74 +6,101 @@
   <title>SeafoodStudios</title>
   <style>
     body {
-      font-family: 'Garamond', monospace;
-      text-align: center;
-      background-color: #f4f4f9;
-      color: #333;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #2a2a72, #009ffd);
+      color: white;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
     }
     h1 {
-      font-size: 3em;
+      font-size: 4em;
       margin-top: 50px;
-      color: #2a9df4;
+      color: #00f2ff;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-shadow: 0 0 20px rgba(0, 242, 255, 0.7);
     }
     p {
-      font-size: 1.5em;
+      font-size: 1.3em;
       margin: 20px 0;
-      color: #555;
+      color: rgba(255, 255, 255, 0.8);
+      letter-spacing: 2px;
+      line-height: 1.5;
     }
     a {
       display: inline-block;
       margin: 10px 0;
-      padding: 12px 20px;
-      background-color: #2a9df4;
+      padding: 15px 25px;
+      background-color: #00f2ff;
       color: white;
       text-decoration: none;
       font-size: 1.2em;
-      border-radius: 8px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
+      border-radius: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0 0 10px rgba(0, 242, 255, 0.8);
     }
     a:hover {
-      background-color: #1a7a9b;
-      transform: scale(1.05);
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 242, 255, 1);
     }
     a:active {
-      transform: scale(0.98);
+      transform: translateY(0);
+      box-shadow: 0 0 10px rgba(0, 242, 255, 0.6);
     }
     .link-container {
-      margin-top: 30px;
+      margin-top: 50px;
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 1em;
+    }
+    footer p {
+      margin: 0;
+      letter-spacing: 1px;
     }
     @media (max-width: 768px) {
       h1 {
         font-size: 2.5em;
       }
       p {
-        font-size: 1.2em;
+        font-size: 1.1em;
       }
       a {
-        font-size: 1.1em;
-        padding: 10px 18px;
+        font-size: 1em;
+        padding: 12px 20px;
       }
     }
   </style>
 </head>
 <body>
-  <h1>SeafoodStudios</h1>
-  <p>Welcome to SeafoodStudios Games! Explore our interactive and fun experiences below:</p>
-  <div class="link-container">
-    <a href="https://cloudroom.seafoodstudios.com" title="Cloudroom">Cloudroom</a>
-    <a href="https://lightswitch.seafoodstudios.com" title="Light Switch Simulator">Light Switch Simulator</a>
-    <a href="https://prankinator.seafoodstudios.com" title="Prankinator">Prankinator</a>
-    <a href="https://alchemy.seafoodstudios.com" title="Sigma Alchemy">Sigma Alchemy</a>
-    <a href="https://salmon.seafoodstudios.com" title="Salmon WebView">Salmon WebView</a>
-    <a href="http://sfs.bz" title="SFS.BZ Free Subdomains">SFS.BZ Free Subdomains</a>
-    <a href="https://algae.seafoodstudios.com" title="ALGAE Transferer">ALGAE Transferer</a>
-    <a href="https://algaemine.seafoodstudios.com" title="ALGAE Miner">ALGAE Miner</a>
-  </div>
-  <div class="link-container">
-    <a href="https://github.com/SeafoodStudios" title="GitHub">GitHub</a>
-    <a href="https://updates.seafoodstudios.com" title="Updates">Updates</a>
+  <div>
+    <h1>SeafoodStudios</h1>
+    <p>Welcome to SeafoodStudios Games! Explore our interactive and fun experiences below:</p>
+    <div class="link-container">
+      <a href="https://cloudroom.seafoodstudios.com" title="Cloudroom">Cloudroom</a>
+      <a href="https://lightswitch.seafoodstudios.com" title="Light Switch Simulator">Light Switch Simulator</a>
+      <a href="https://prankinator.seafoodstudios.com" title="Prankinator">Prankinator</a>
+      <a href="https://alchemy.seafoodstudios.com" title="Sigma Alchemy">Sigma Alchemy</a>
+      <a href="https://salmon.seafoodstudios.com" title="Salmon WebView">Salmon WebView</a>
+      <a href="http://sfs.bz" title="SFS.BZ Free Subdomains">SFS.BZ Free Subdomains</a>
+      <a href="https://algae.seafoodstudios.com" title="ALGAE Transferer">ALGAE Transferer</a>
+      <a href="https://algaemine.seafoodstudios.com" title="ALGAE Miner">ALGAE Miner</a>
+    </div>
+    <div class="link-container">
+      <a href="https://github.com/SeafoodStudios" title="GitHub">GitHub</a>
+      <a href="https://updates.seafoodstudios.com" title="Updates">Updates</a>
+    </div>
   </div>
   <footer>
     <p>© 2024 SeafoodStudios. All rights reserved.</p>
