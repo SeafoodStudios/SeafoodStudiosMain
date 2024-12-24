@@ -2,156 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SeafoodStudios</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    /* Basic reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Poppins', sans-serif; /* Body text font */
+      font-family: 'Orbitron', sans-serif;
       background: #121212; /* Dark background */
       color: #e0e0e0; /* Light text */
+      margin: 0;
+      padding: 0 20px;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       overflow: hidden;
       text-align: center;
-      padding: 2vw; /* Flexible padding based on viewport width */
+      box-sizing: border-box;
     }
-
     h1 {
-      font-family: 'Raleway', sans-serif; /* Changed font for the title */
-      font-size: 6vw; /* Font size adjusts with viewport width */
+      font-size: 4em;
+      margin-top: 0; /* Removed top margin completely */
       color: #bb00ff; /* Softer neon purple */
       text-transform: uppercase;
-      letter-spacing: 4px;
+      letter-spacing: 6px;
       text-shadow: 
         0 0 10px rgba(187, 0, 255, 0.6),
         0 0 20px rgba(187, 0, 255, 0.5), 
         0 0 30px rgba(187, 0, 255, 0.4),
         0 0 40px rgba(187, 0, 255, 0.3); /* Softer neon purple glow */
     }
-
     p {
-      font-size: 2vw; /* Font size adjusts with viewport width */
-      margin: 2vw 0;
+      font-size: 1.2em;
+      margin: 20px 0;
       color: rgba(240, 240, 240, 0.85); /* Soft white text */
-      letter-spacing: 0.5px;
-      line-height: 1.6;
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.1), 0 0 10px rgba(255, 255, 255, 0.05); /* Subtle white glow */
+      letter-spacing: 1px;
+      line-height: 1.5;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white glow */
     }
-
     a {
       display: inline-block;
-      margin: 1vw 0;
-      padding: 2vw 3vw; /* Responsive padding */
+      margin: 10px 0;
+      padding: 18px 28px;
       background-color: #0068a1; /* Muted neon blue */
       color: #e0e0e0;
       text-decoration: none;
-      font-size: 2vw; /* Responsive font size */
+      font-size: 1.2em;
       border-radius: 25px;
       transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
       box-shadow: 0 0 15px rgba(0, 104, 161, 0.6), 0 0 25px rgba(0, 104, 161, 0.5); /* Softer neon blue glow */
     }
-
     a:hover {
       transform: translateY(-5px);
       background-color: #0094c6;
       box-shadow: 0 0 20px rgba(0, 148, 198, 0.8), 0 0 40px rgba(0, 148, 198, 0.6); /* Subdued hover effect */
     }
-
     a:active {
       transform: translateY(0);
       background-color: #004c75;
       box-shadow: 0 0 15px rgba(0, 104, 161, 0.5);
     }
-
     .link-container {
-      margin-top: 5vw;
+      margin-top: 30px;
     }
-
     footer {
       position: absolute;
-      bottom: 2vw;
+      bottom: 10px;
       width: 100%;
       color: rgba(240, 240, 240, 0.5);
-      font-size: 1.5vw; /* Responsive footer font */
+      font-size: 1em;
     }
-
     footer p {
       margin: 0;
       letter-spacing: 1px;
       text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Soft footer glow */
     }
-
-    /* Media Queries for Different Screen Sizes */
-    @media (max-width: 1024px) {
-      h1 {
-        font-size: 10vw; /* Adjust heading size for tablets */
-      }
-
-      p {
-        font-size: 2.5vw; /* Adjust paragraph size for tablets */
-      }
-
-      a {
-        font-size: 2.2vw; /* Adjust link size for tablets */
-        padding: 2vw 3vw;
-      }
-    }
-
     @media (max-width: 768px) {
-      body {
-        padding: 4vw;
-      }
-
       h1 {
-        font-size: 12vw; /* Adjust heading size for smaller tablets */
+        font-size: 2.8em;
       }
-
       p {
-        font-size: 3.5vw; /* Adjust paragraph size for smaller tablets */
+        font-size: 1.1em;
       }
-
       a {
-        font-size: 3vw;
-        padding: 2.5vw 4vw;
-      }
-
-      footer p {
-        font-size: 2vw; /* Adjust footer font for smaller screens */
-      }
-    }
-
-    @media (max-width: 480px) {
-      body {
-        padding: 5vw;
-      }
-
-      h1 {
-        font-size: 15vw; /* Heading size for mobile */
-      }
-
-      p {
-        font-size: 4vw; /* Paragraph size for mobile */
-      }
-
-      a {
-        font-size: 3.5vw; /* Link size for mobile */
-        padding: 3vw 5vw;
-      }
-
-      footer p {
-        font-size: 3vw; /* Footer font for mobile */
+        font-size: 1em;
+        padding: 15px 25px;
       }
     }
   </style>
