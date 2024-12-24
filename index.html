@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SeafoodStudios</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <style>
     /* Basic reset */
     * {
@@ -14,7 +14,7 @@
     }
 
     body {
-      font-family: 'Orbitron', sans-serif;
+      font-family: 'Roboto', sans-serif; /* Body text font */
       background: #121212; /* Dark background */
       color: #e0e0e0; /* Light text */
       display: flex;
@@ -23,11 +23,12 @@
       height: 100vh;
       overflow: hidden;
       text-align: center;
-      padding: 20px;
+      padding: 2vw; /* Flexible padding based on viewport width */
     }
 
     h1 {
-      font-size: 4em;
+      font-family: 'Orbitron', sans-serif; /* Headings font */
+      font-size: 8vw; /* Font size adjusts with viewport width */
       color: #bb00ff; /* Softer neon purple */
       text-transform: uppercase;
       letter-spacing: 6px;
@@ -39,26 +40,26 @@
     }
 
     p {
-      font-size: 1.2em;
-      margin: 20px 0;
+      font-size: 2vw; /* Font size adjusts with viewport width */
+      margin: 2vw 0;
       color: rgba(240, 240, 240, 0.85); /* Soft white text */
-      letter-spacing: 1px;
-      line-height: 1.5;
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white glow */
+      letter-spacing: 0.5px;
+      line-height: 1.6;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.1), 0 0 10px rgba(255, 255, 255, 0.05); /* Subtle white glow */
     }
 
     a {
       display: inline-block;
-      margin: 10px 0;
-      padding: 18px 28px;
+      margin: 1vw 0;
+      padding: 2vw 3vw; /* Responsive padding */
       background-color: #0068a1; /* Muted neon blue */
       color: #e0e0e0;
       text-decoration: none;
-      font-size: 1.2em;
+      font-size: 2vw; /* Responsive font size */
       border-radius: 25px;
       transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       box-shadow: 0 0 15px rgba(0, 104, 161, 0.6), 0 0 25px rgba(0, 104, 161, 0.5); /* Softer neon blue glow */
     }
 
@@ -75,15 +76,15 @@
     }
 
     .link-container {
-      margin-top: 30px;
+      margin-top: 5vw;
     }
 
     footer {
       position: absolute;
-      bottom: 10px;
+      bottom: 2vw;
       width: 100%;
       color: rgba(240, 240, 240, 0.5);
-      font-size: 1em;
+      font-size: 1.5vw; /* Responsive footer font */
     }
 
     footer p {
@@ -92,42 +93,67 @@
       text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Soft footer glow */
     }
 
-    /* Responsive Styles */
-    @media (max-width: 768px) {
+    /* Media Queries for Different Screen Sizes */
+    @media (max-width: 1024px) {
       h1 {
-        font-size: 2.8em;
+        font-size: 10vw; /* Adjust heading size for tablets */
       }
 
       p {
-        font-size: 1.1em;
+        font-size: 2.5vw; /* Adjust paragraph size for tablets */
       }
 
       a {
-        font-size: 1em;
-        padding: 15px 25px;
+        font-size: 2.2vw; /* Adjust link size for tablets */
+        padding: 2vw 3vw;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 4vw;
+      }
+
+      h1 {
+        font-size: 12vw; /* Adjust heading size for smaller tablets */
+      }
+
+      p {
+        font-size: 3.5vw; /* Adjust paragraph size for smaller tablets */
+      }
+
+      a {
+        font-size: 3vw;
+        padding: 2.5vw 4vw;
+      }
+
+      footer p {
+        font-size: 2vw; /* Adjust footer font for smaller screens */
       }
     }
 
     @media (max-width: 480px) {
+      body {
+        padding: 5vw;
+      }
+
       h1 {
-        font-size: 2.2em;
+        font-size: 15vw; /* Heading size for mobile */
       }
 
       p {
-        font-size: 1em;
+        font-size: 4vw; /* Paragraph size for mobile */
       }
 
       a {
-        font-size: 0.9em;
-        padding: 12px 20px;
+        font-size: 3.5vw; /* Link size for mobile */
+        padding: 3vw 5vw;
       }
 
-      body {
-        padding: 10px;
-        overflow: auto;
+      footer p {
+        font-size: 3vw; /* Footer font for mobile */
       }
     }
-
   </style>
 </head>
 <body>
