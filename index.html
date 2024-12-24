@@ -4,24 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SeafoodStudios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Orbitron', sans-serif;
       background: #121212; /* Dark background */
       color: #e0e0e0; /* Light text */
-      margin: 0;
-      padding: 0 20px;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       overflow: hidden;
       text-align: center;
-      box-sizing: border-box;
+      padding: 20px;
     }
+
     h1 {
       font-size: 4em;
-      margin-top: 0; /* Removed top margin completely */
       color: #bb00ff; /* Softer neon purple */
       text-transform: uppercase;
       letter-spacing: 6px;
@@ -31,6 +37,7 @@
         0 0 30px rgba(187, 0, 255, 0.4),
         0 0 40px rgba(187, 0, 255, 0.3); /* Softer neon purple glow */
     }
+
     p {
       font-size: 1.2em;
       margin: 20px 0;
@@ -39,6 +46,7 @@
       line-height: 1.5;
       text-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white glow */
     }
+
     a {
       display: inline-block;
       margin: 10px 0;
@@ -53,19 +61,23 @@
       letter-spacing: 2px;
       box-shadow: 0 0 15px rgba(0, 104, 161, 0.6), 0 0 25px rgba(0, 104, 161, 0.5); /* Softer neon blue glow */
     }
+
     a:hover {
       transform: translateY(-5px);
       background-color: #0094c6;
       box-shadow: 0 0 20px rgba(0, 148, 198, 0.8), 0 0 40px rgba(0, 148, 198, 0.6); /* Subdued hover effect */
     }
+
     a:active {
       transform: translateY(0);
       background-color: #004c75;
       box-shadow: 0 0 15px rgba(0, 104, 161, 0.5);
     }
+
     .link-container {
       margin-top: 30px;
     }
+
     footer {
       position: absolute;
       bottom: 10px;
@@ -73,23 +85,49 @@
       color: rgba(240, 240, 240, 0.5);
       font-size: 1em;
     }
+
     footer p {
       margin: 0;
       letter-spacing: 1px;
       text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Soft footer glow */
     }
+
+    /* Responsive Styles */
     @media (max-width: 768px) {
       h1 {
         font-size: 2.8em;
       }
+
       p {
         font-size: 1.1em;
       }
+
       a {
         font-size: 1em;
         padding: 15px 25px;
       }
     }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      a {
+        font-size: 0.9em;
+        padding: 12px 20px;
+      }
+
+      body {
+        padding: 10px;
+        overflow: auto;
+      }
+    }
+
   </style>
 </head>
 <body>
