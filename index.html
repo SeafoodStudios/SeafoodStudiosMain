@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: 'Orbitron', sans-serif;
-      background: #0e0e0e; /* Dark background */
+      background: #121212; /* Dark background */
       color: #e0e0e0; /* Light text */
       margin: 0;
       padding: 0 20px;
@@ -22,14 +22,14 @@
     h1 {
       font-size: 4em;
       margin-top: 0; /* Removed top margin completely */
-      color: #ff00ff; /* Neon purple */
+      color: #bb00ff; /* Softer neon purple */
       text-transform: uppercase;
       letter-spacing: 6px;
       text-shadow: 
-        0 0 20px rgba(255, 0, 255, 0.9),
-        0 0 40px rgba(255, 0, 255, 0.8), 
-        0 0 60px rgba(255, 0, 255, 0.7),
-        0 0 80px rgba(255, 0, 255, 0.6); /* Strong neon purple glow */
+        0 0 10px rgba(187, 0, 255, 0.6),
+        0 0 20px rgba(187, 0, 255, 0.5), 
+        0 0 30px rgba(187, 0, 255, 0.4),
+        0 0 40px rgba(187, 0, 255, 0.3); /* Softer neon purple glow */
     }
     p {
       font-size: 1.2em;
@@ -37,13 +37,13 @@
       color: rgba(240, 240, 240, 0.85); /* Soft white text */
       letter-spacing: 1px;
       line-height: 1.5;
-      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white glow */
     }
     a {
       display: inline-block;
       margin: 10px 0;
       padding: 18px 28px;
-      background-color: #007fff; /* Neon blue */
+      background-color: #0068a1; /* Muted neon blue */
       color: #e0e0e0;
       text-decoration: none;
       font-size: 1.2em;
@@ -51,17 +51,17 @@
       transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
       text-transform: uppercase;
       letter-spacing: 2px;
-      box-shadow: 0 0 20px rgba(0, 127, 255, 0.8), 0 0 30px rgba(0, 127, 255, 0.6); /* Neon blue glow */
+      box-shadow: 0 0 15px rgba(0, 104, 161, 0.6), 0 0 25px rgba(0, 104, 161, 0.5); /* Softer neon blue glow */
     }
     a:hover {
       transform: translateY(-5px);
-      background-color: #00b3ff;
-      box-shadow: 0 0 40px rgba(0, 191, 255, 1), 0 0 80px rgba(0, 191, 255, 0.7); /* Brighter neon effect */
+      background-color: #0094c6;
+      box-shadow: 0 0 20px rgba(0, 148, 198, 0.8), 0 0 40px rgba(0, 148, 198, 0.6); /* Subdued hover effect */
     }
     a:active {
       transform: translateY(0);
-      background-color: #005c99;
-      box-shadow: 0 0 20px rgba(0, 127, 255, 0.6);
+      background-color: #004c75;
+      box-shadow: 0 0 15px rgba(0, 104, 161, 0.5);
     }
     .link-container {
       margin-top: 30px;
@@ -76,7 +76,7 @@
     footer p {
       margin: 0;
       letter-spacing: 1px;
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.4); /* Soft glow for footer */
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Soft footer glow */
     }
     @media (max-width: 768px) {
       h1 {
