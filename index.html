@@ -6,8 +6,8 @@
   <title>SeafoodStudios</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: #121212;
+      font-family: 'Source Code Pro', monospace; /* More developer-centric font */
+      background: #181818;
       color: #e0e0e0;
       margin: 0;
       padding: 0;
@@ -23,20 +23,20 @@
     }
 
     h1 {
-      font-size: 6vw;
+      font-size: 5vw;
       margin-top: 0;
-      color: #bb00ff;
+      color: #ff4081; /* Brighter accent for a more techy feel */
       text-transform: uppercase;
-      letter-spacing: 6px;
+      letter-spacing: 5px;
       text-shadow: 
-        0 0 15px rgba(187, 0, 255, 0.6),
-        0 0 25px rgba(187, 0, 255, 0.5), 
-        0 0 35px rgba(187, 0, 255, 0.4),
-        0 0 45px rgba(187, 0, 255, 0.3);
+        0 0 15px rgba(255, 64, 129, 0.6),
+        0 0 25px rgba(255, 64, 129, 0.5), 
+        0 0 35px rgba(255, 64, 129, 0.4),
+        0 0 45px rgba(255, 64, 129, 0.3);
     }
 
     p {
-      font-size: 3.5vw;
+      font-size: 2.5vw;
       margin: 20px 0;
       color: rgba(240, 240, 240, 0.85);
       letter-spacing: 1px;
@@ -47,8 +47,8 @@
     a {
       display: inline-block;
       margin: 12px 0;
-      padding: 18px 28px;
-      background-color: #0068a1;
+      padding: 12px 24px;
+      background-color: #1e88e5;
       color: #e0e0e0;
       text-decoration: none;
       font-size: 1.1rem;
@@ -56,27 +56,28 @@
       transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
       text-transform: uppercase;
       letter-spacing: 1.5px;
-      box-shadow: 0 0 15px rgba(0, 104, 161, 0.6), 0 0 25px rgba(0, 104, 161, 0.5);
+      box-shadow: 0 0 15px rgba(30, 136, 229, 0.6), 0 0 25px rgba(30, 136, 229, 0.5);
     }
 
     a:hover {
       transform: translateY(-6px);
-      background-color: #0094c6;
-      box-shadow: 0 0 30px rgba(0, 148, 198, 0.8), 0 0 50px rgba(0, 148, 198, 0.6);
+      background-color: #1976d2;
+      box-shadow: 0 0 30px rgba(25, 118, 210, 0.8), 0 0 50px rgba(25, 118, 210, 0.6);
     }
 
     a:active {
       transform: translateY(0);
-      background-color: #004c75;
-      box-shadow: 0 0 15px rgba(0, 104, 161, 0.5);
+      background-color: #1565c0;
+      box-shadow: 0 0 15px rgba(30, 136, 229, 0.5);
     }
 
     .link-container {
-      margin-top: 30px;
+      margin-top: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 15px;
+      gap: 10px;
+      font-family: 'Source Code Pro', monospace;
     }
 
     footer {
@@ -95,40 +96,40 @@
     /* Responsive Styles */
     @media (max-width: 1024px) {
       h1 {
-        font-size: 8vw;
+        font-size: 7vw;
       }
       p {
-        font-size: 4.5vw;
+        font-size: 3.5vw;
       }
       a {
         font-size: 1.1rem;
-        padding: 16px 24px;
+        padding: 16px 28px;
       }
     }
 
     @media (max-width: 768px) {
       h1 {
-        font-size: 9vw;
+        font-size: 8vw;
       }
       p {
-        font-size: 5vw;
+        font-size: 4vw;
       }
       a {
         font-size: 1rem;
-        padding: 14px 22px;
+        padding: 14px 24px;
       }
     }
 
     @media (max-width: 480px) {
       h1 {
-        font-size: 12vw;
+        font-size: 10vw;
       }
       p {
-        font-size: 6vw;
+        font-size: 5vw;
       }
       a {
         font-size: 0.9rem;
-        padding: 12px 20px;
+        padding: 12px 22px;
       }
     }
 
