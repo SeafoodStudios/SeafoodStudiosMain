@@ -45,7 +45,8 @@
       text-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);
     }
 
-    .link-container {
+    /* Container for Project Links */
+    .projects-container {
       margin-top: 20px;
       display: flex;
       flex-wrap: wrap; /* Allow buttons to wrap to next line on smaller screens */
@@ -54,6 +55,14 @@
       font-family: 'Source Code Pro', monospace;
       width: 100%; /* Ensure links take full width */
       max-width: 900px; /* Limit max width for readability */
+    }
+
+    /* Container for GitHub and Updates Links */
+    .other-links-container {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center; /* Center buttons horizontally */
+      gap: 20px; /* Add more space between these links */
     }
 
     a {
@@ -103,7 +112,7 @@
       p {
         font-size: 3.5vw;
       }
-      .link-container {
+      .projects-container {
         gap: 15px;
       }
       a {
@@ -119,8 +128,11 @@
       p {
         font-size: 4vw;
       }
-      .link-container {
+      .projects-container {
         gap: 20px;
+      }
+      .other-links-container {
+        gap: 30px;
       }
       a {
         font-size: 1rem;
@@ -135,8 +147,11 @@
       p {
         font-size: 5vw;
       }
-      .link-container {
+      .projects-container {
         gap: 25px;
+      }
+      .other-links-container {
+        gap: 35px;
       }
       a {
         font-size: 0.9rem;
@@ -150,22 +165,27 @@
   <div>
     <h1>SeafoodStudios</h1>
     <p>Welcome to SeafoodStudios!</p>
-    <div class="link-container">
-      <a href="https://cloudroom.seafoodstudios.com" title="Cloudroom">Cloudroom</a>
-      <a href="https://lightswitch.seafoodstudios.com" title="Light Switch Simulator">Light Switch Simulator</a>
-      <a href="https://prankinator.seafoodstudios.com" title="Prankinator">Prankinator</a>
-      <a href="https://alchemy.seafoodstudios.com" title="Sigma Alchemy">Sigma Alchemy</a>
-      <a href="https://salmon.seafoodstudios.com" title="Salmon WebView">Salmon WebView</a>
-      <a href="http://sfs.bz" title="SFS.BZ Free Subdomains">SFS.BZ Free Subdomains</a>
-      <a href="https://algae.seafoodstudios.com" title="ALGAE Transferer">ALGAE Transferer</a>
-      <a href="https://algaemine.seafoodstudios.com" title="ALGAE Miner">ALGAE Miner</a>
-      <a href="https://sushios.seafoodstudios.com" title="SushiOS">SushiOS</a>
+
+    <!-- Projects Links -->
+    <div class="projects-container">
+      <a href="https://cloudroom.seafoodstudios.com" title="Cloudroom" target="_blank">Cloudroom</a>
+      <a href="https://lightswitch.seafoodstudios.com" title="Light Switch Simulator" target="_blank">Light Switch Simulator</a>
+      <a href="https://prankinator.seafoodstudios.com" title="Prankinator" target="_blank">Prankinator</a>
+      <a href="https://alchemy.seafoodstudios.com" title="Sigma Alchemy" target="_blank">Sigma Alchemy</a>
+      <a href="https://salmon.seafoodstudios.com" title="Salmon WebView" target="_blank">Salmon WebView</a>
+      <a href="http://sfs.bz" title="SFS.BZ Free Subdomains" target="_blank">SFS.BZ Free Subdomains</a>
+      <a href="https://algae.seafoodstudios.com" title="ALGAE Transferer" target="_blank">ALGAE Transferer</a>
+      <a href="https://algaemine.seafoodstudios.com" title="ALGAE Miner" target="_blank">ALGAE Miner</a>
+      <a href="https://sushios.seafoodstudios.com" title="SushiOS" target="_blank">SushiOS</a>
     </div>
-    <div class="link-container">
-      <a href="https://github.com/SeafoodStudios" title="GitHub">GitHub</a>
-      <a href="https://updates.seafoodstudios.com" title="Updates">Updates</a>
+
+    <!-- GitHub and Updates Links -->
+    <div class="other-links-container">
+      <a href="https://github.com/SeafoodStudios" title="GitHub" target="_blank">GitHub</a>
+      <a href="https://updates.seafoodstudios.com" title="Updates" target="_blank">Updates</a>
     </div>
   </div>
+
   <footer>
     <p>© 2024 SeafoodStudios. All rights reserved.</p>
   </footer>
