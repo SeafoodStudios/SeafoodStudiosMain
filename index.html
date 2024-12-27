@@ -6,7 +6,7 @@
   <title>SeafoodStudios</title>
   <style>
     body {
-      font-family: 'Source Code Pro', monospace; /* More developer-centric font */
+      font-family: 'Source Code Pro', monospace; /* Developer font */
       background: #181818;
       color: #e0e0e0;
       margin: 0;
@@ -20,12 +20,13 @@
       overflow-y: auto;
       text-align: center;
       box-sizing: border-box;
+      padding-top: 20px; /* Add padding for better spacing */
     }
 
     h1 {
       font-size: 5vw;
       margin-top: 0;
-      color: #ff4081; /* Brighter accent for a more techy feel */
+      color: #ff4081; /* Accent color */
       text-transform: uppercase;
       letter-spacing: 5px;
       text-shadow: 
@@ -44,9 +45,19 @@
       text-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);
     }
 
+    .link-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Source Code Pro', monospace;
+      width: 100%; /* Ensure links take full width */
+      max-width: 500px; /* Limit max width for readability */
+    }
+
     a {
       display: inline-block;
-      margin: 12px 0;
       padding: 12px 24px;
       background-color: #1e88e5;
       color: #e0e0e0;
@@ -71,15 +82,6 @@
       box-shadow: 0 0 15px rgba(30, 136, 229, 0.5);
     }
 
-    .link-container {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      font-family: 'Source Code Pro', monospace;
-    }
-
     footer {
       margin-top: auto;
       font-size: 0.9rem;
@@ -101,6 +103,9 @@
       p {
         font-size: 3.5vw;
       }
+      .link-container {
+        gap: 15px;
+      }
       a {
         font-size: 1.1rem;
         padding: 16px 28px;
@@ -114,6 +119,9 @@
       p {
         font-size: 4vw;
       }
+      .link-container {
+        gap: 20px;
+      }
       a {
         font-size: 1rem;
         padding: 14px 24px;
@@ -126,6 +134,9 @@
       }
       p {
         font-size: 5vw;
+      }
+      .link-container {
+        gap: 25px;
       }
       a {
         font-size: 0.9rem;
