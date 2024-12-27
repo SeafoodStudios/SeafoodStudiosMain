@@ -67,6 +67,9 @@
     }
     .link-container {
       margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     footer {
       margin-top: auto;
@@ -74,11 +77,14 @@
       color: rgba(240, 240, 240, 0.5);
       letter-spacing: 1px;
       text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+      margin-bottom: 20px;
     }
     footer p {
       margin: 0;
     }
-    @media (max-width: 768px) {
+
+    /* Responsive Styles */
+    @media (max-width: 1024px) {
       h1 {
         font-size: 8vw;
       }
@@ -86,16 +92,28 @@
         font-size: 4vw;
       }
       a {
+        font-size: 1.1rem;
+        padding: 16px 24px;
+      }
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 9vw;
+      }
+      p {
+        font-size: 5vw;
+      }
+      a {
         font-size: 1rem;
-        padding: 15px 25px;
+        padding: 14px 22px;
       }
     }
     @media (max-width: 480px) {
       h1 {
-        font-size: 10vw;
+        font-size: 12vw;
       }
       p {
-        font-size: 5vw;
+        font-size: 6vw;
       }
       a {
         font-size: 0.9rem;
@@ -117,6 +135,7 @@
       <a href="http://sfs.bz" title="SFS.BZ Free Subdomains">SFS.BZ Free Subdomains</a>
       <a href="https://algae.seafoodstudios.com" title="ALGAE Transferer">ALGAE Transferer</a>
       <a href="https://algaemine.seafoodstudios.com" title="ALGAE Miner">ALGAE Miner</a>
+      <a href="https://sushios" title="SushiOS">SushiOS</a>
     </div>
     <div class="link-container">
       <a href="https://github.com/SeafoodStudios" title="GitHub">GitHub</a>
